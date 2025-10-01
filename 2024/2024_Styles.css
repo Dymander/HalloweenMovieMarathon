@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;800&display=swap");
+
+.calendar
+{
+    display: flex;
+	flex-flow: column;
+	align-items: center;
+	font-family: "Poppins", serif;
+    color: black;
+	background: radial-gradient(
+		circle,
+		rgba(255, 60, 0, 1) 0%,
+		rgba(60, 0, 0, 1) 90%);
+}
+
+a:link
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+a:active
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+.logodiv
+{
+    display: flex;
+    justify-content: center;
+}
+
+.logo
+{
+    max-width: 300rem;
+    width: 50%;
+    height: auto;
+}
+
+.year
+{
+    display: flex;
+    justify-content: center;
+    font-size: 3vw;
+    font-weight: 600;
+    padding: 0.5rem;
+}
+
+.lihd
+{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5vw;
+    font-weight: 600;
+    padding: 0.5rem;
+    max-width: 12rem;
+    width: 12vw;
+}
+
+.calul
+{
+	display: grid;
+	grid-template-columns: repeat(7, minmax(13%, 1fr));
+    justify-items: center;
+	list-style: none;
+    width: 100vw;
+    max-width: max-content;
+    box-sizing: border-box;
+    padding: inherit;
+}
+
+.calli
+{
+    display: flex;
+    width: 12vw;
+    height: 10rem;
+    margin: 0.25rem;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.20);
+    box-shadow: 0 8px 32px 0 rgba(255, 210, 0, 0.37);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    transition: background 0.5s ease-out 10ms;
+    position: relative;
+    overflow: hidden;
+}
+
+.calli:hover 
+{
+    background: rgba(0, 0, 0, 0.50);
+}
+
+.calli:hover > .poster 
+{
+    transform: translate(0%);
+}
+
+.calli:hover > .movie-title 
+{
+    opacity: 0%;
+}
+
+.calli:hover > time
+{
+    opacity: 0%;
+}
+
+.caltime 
+{
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+	font-size: 2rem;
+    font-weight: 800;
+    position: absolute;
+    transition: opacity 0.5s;
+    z-index: 1;
+}
+
+.poster 
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translateX(101%);
+    transition: transform 0.5s ease-out 10ms;
+}
+
+.movie-title 
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s;
+    object-fit: contain;
+}
+
+pageheader
+{
+    display: flex;
+    height: 10vh;
+    border-radius: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.5);
+    margin: 2rem;
+}
+
+.pagebody
+{
+	font-family: "Poppins", serif;
+	background: radial-gradient(
+		circle,
+		rgba(60, 30, 60, 1) 0%,
+		rgba(30, 30, 30, 1) 90%);
+}
+
+.pagelogo
+{
+    max-height: 90%;
+}
+
+.pagemovietitle
+{
+    display: flex;
+    width: 20vh;
+    height: 20vh;
+    margin: 2rem;
+    box-sizing: border-box;
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    position: relative;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+revcontainer
+{
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+}
+
+reviewbox
+{
+    display: flex;
+    width: 40vw;
+    margin: 2rem;
+    box-sizing: border-box;
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    position: relative;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+reviewtext
+{
+    margin: 2rem;
+    font-family: "Poppins", serif;
+    font-size: 24px;
+}
